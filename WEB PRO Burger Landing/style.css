@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ОБЩИЕ СТИЛИ */
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #1C1C1C;
+    color: #fff;
+}
+
+a{
+    color: #fff;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+ul {
+    list-style: none;/* Убираем маркеры списка */
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 165px;
+    height: 49px;
+    background: #f6762c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    
+}
+
+.btn--small {
+    width: 141px;
+    height: 39px;
+    font-size: 12px;
+}
+
+.container {
+    max-width: 1170px;  
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+p + p{
+    margin-top: 15px;
+}
+
+/* ШАПКА */
+
+.header {
+    padding: 25px 0;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav a {
+    font-size: 14px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+
+.header_nav a:hover {
+    opacity: 0.9;
+
+}
+
+.header_nav a.active {
+    opacity: 1;
+
+}
+
+
+.header_nav_list {
+    display: flex;
+    gap: 28px;
+}
+
+/* ПРИВЕТСТВЕННЫЙ БЛОК */
+
+
+.welcome {
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin-top: -100px;
+    padding: 435px 0;
+    background-image: url("./images/welcome-bg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center 60%; 
+   
+}
+
+.welcome_text {
+    width: 550px;
+}
+
+.welcome_subtitle {
+    margin-bottom: 7px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.welcome_title {
+    font-size: 57px;
+}
+
+.welcome_desc {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    font-size: 18px;    
+    opacity: 0.7;
+}
+
+/* Блок еда_список */
+
+.food_list {
+    padding: 100px;
+}
+
+.food_list .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px 10px;
+}
+
+.food_list_card {
+    width: 260px;
+    background: #312f30;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.food_list_img {
+    height: 175px;
+    object-fit: cover;
+}
+
+.food_list_title {
+    font-size: 20px;
+    
+}
+
+.food_list_desc {
+    
+    opacity: 0.7;
+}
+
+.food_list_text_wrapper{
+    padding: 30px 20px;
+}
+
+/* БЛОК ORDER */
+
+.order {
+    background: #312f30;
+    padding: 60px 0;
+}
+
+.order .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:90px ;
+}
+
+.order_img {
+    width: 470px;
+}
+
+.order_text {
+    width: 371px;
+}
+
+.order_text_title {
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 44px;
+    
+}
+
+.order_text_desc {
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.order_text_price {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #f6762c;
+}
+
+.order_text_price_old {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-decoration: line-through;
+    color: #f6762c;
+    opacity: 0.5;
+}
+
+.order_text .btn {
+    margin-top: 11px;
+}
+
+.order_text_price + .order_text_price {
+    margin-left: 3px;
+}
+
+/* БЛОК PRODUCT */
+
+.product {
+
+}
+
+.product .container {
+}
+
+.product_card_left  {
+    padding: 60px 0 60px 290px;
+    box-sizing: border-box;
+    width: 550px;
+    min-height: 300px;
+    background-size: cover;
+}
+
+.product_card_right  {
+    padding: 60px 290px 60px 30px;
+    box-sizing: border-box;
+    width: 550px;
+    min-height: 300px;
+    background-size: cover;
+}
+
+.product_title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.product_desc {
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.product .btn{
+    margin-top: 10px;
+}
+
+.order_text_price_old{
+    margin-left: px;
+    
+}
+
+.queen{
+    background-image: url(./images/product-1.jpg);
+    background-repeat: no-repeat;
+}
+
+.Pizza{
+    background-image: url(./images/product-2.jpg);
+    background-repeat: no-repeat;
+}
+
+.Burger{
+    background-image: url(./images/product-3.jpg);
+    background-repeat: no-repeat;
+}
+
+.Papa_John{
+    background-image: url(./images/product-4.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.product_flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px 30px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+
+/* блок feedback */
+
+.feedback .container{
+    display: flex;
+    text-align: center;
+    padding-bottom: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.feedback_cont{
+    margin-left: 200px;
+    margin-top: 130px;
+    
+}
+
+.fedback_koma{
+    
+}
+
+.feedback_desc{
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.feedback_title{
+    font-size: 24px;
+    text-align: center;
+}
+.feedback_title_down{
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+/* download BOX */
+
+.download {
+    background: #312f30;
+}
+
+.download .container{
+    display: flex;
+    justify-content: space-around;
+    padding: 65px 0px 65px 0px;
+}
+
+.dow{
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.dowload_text{
+    font-size: 40px;
+}
+
+/* FOOTER BOX */
+
+.footer {
+    padding: 120px 0;
+    
+}
+
+.footer a{
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.footer .footer_title{
+    font-weight: 500;
+    font-size: 16px;
+    opacity: 1;
+}
+
+.footer .container{
+    display: grid;
+    grid-template-columns: 1fr,3fr,1fr;
+    grid-template-areas:  "contacts nav socials";
+    
+}
+
+.footer_contacts {
+    margin-right: 100px;
+}
+
+.footer_img {
+    padding-bottom: 10px;
+}
+
+.footer_link {
+}
+
+.footer_link_mail {
+}
+
+.footer_link-web {
+}
+
+.container .footer_nav {
+    gap: 50px;
+}
+
+.footer_nav_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    
+}
+
+.footer_img_small {
+    padding-right: 5px;
+}
+
+.footer_inner_list {
+}
+
+.footer_list_item {
+}
+
+.footer_socials {
+    margin-left: 100px;
+}
+
+.footer_socials_text {
+}
+
+.footer_socials-icons {
+}
+
+.footer_socials_link {
+}
+
+.footer_socials-icon {
+}
